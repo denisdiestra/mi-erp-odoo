@@ -1,0 +1,21 @@
+# Ignorar carpetas de datos de Docker (base de datos y archivos)
+odoo-web-data/
+odoo-db-data/
+.env
+
+# Ignorar archivos de sistema y temporales
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Ignorar la carpeta OCA (porque la descargamos con el script)
+oca/web/
+oca/server-tools/
+oca/account-financial-tools/
+# ... (O mejor aún, ignoramos todo el contenido de oca excepto el script)
+oca/*
+!oca/download_repos.sh
+
+# Ignorar logs
+*.log
